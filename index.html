@@ -14,145 +14,156 @@
       <h4>Take this quiz to be sorted into your Epicodus House.</h4>
     </div>
     <div class="container"><!--start container-->
-      <div class="panel panel-primary"><!-- Start Quiz Panel-->
-        <div class="panel-heading">
-          <h3 class="panel-title">Official Sorting Quiz</h3>
-        </div>
-        <div class="panel-body">
-          <form id="epicodusForm"><!--start Form-->
-            <div class="form-group">
-              <label for="name">First Name:</label>
-              <input type="text" name="name" class="firstName form-control">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-primary"><!-- Start Quiz Panel-->
+            <div class="panel-heading">
+              <h3 class="panel-title">Official Sorting Quiz</h3>
             </div>
+            <div class="panel-body">
+              <form id="epicodusForm"><!--start Form-->
+                <div class="form-group">
+                  <label for="name">First Name:</label>
+                  <input type="text" name="name" class="firstName form-control">
+                </div>
 
-            <div class="form-group">
-              <label for="name">Last Name:</label>
-              <input type="text" name="name" class="lastName form-control">
+                <div class="form-group">
+                  <label for="name">Last Name:</label>
+                  <input type="text" name="name" class="lastName form-control">
+                </div>
+
+                <label for="companyType">What type of Company would you most want to work for?</label>
+                <select class="form-control" id="companyType">
+                  <option value="larger">Larger, more established businesses</option>  <!--C#-->
+                  <option value="smaller">Smaller companies or startups</option>
+                  <option value="either">Either large or small companies</option>
+                  <option value="creative">A creative company that values my design talent</option>
+                  <option value="neither">None, I don't want to work.</option>
+                </select>
+
+                <div class="form-group radioQ">
+                  <label for="system">
+                  What operating system do you prefer to use?
+                  </label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="system" value="mac">
+                      Mac
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="system" value="windows">
+                      Windows only
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="system" value="other">
+                      Other
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="system" value="either">
+                      Either/Any
+                    </label>
+                  </div>
+                </div>
+
+                <label for="jobType">In what way do you want to contribute?</label>
+                <select class="form-control" id="jobType">
+                  <option value="apps">I want to develop Android Apps</option>
+                  <option value="content">I want to build content-heavy websites.</option>
+                  <option value="interactive">I want to make interactive web applications.</option>
+                  <option value="design">I want to create polished designs.</option>
+                  <option value="software">I want to develop internal software.</option>
+                  <option value="any">I would be happy to contribute in any way.</option>
+                  <option value="none">I do not want to contribute.</option>
+                </select>
+
+                <div class="form-group radioQ">
+                  <label for="system">
+                  What phrase best describes your experience level?
+                  </label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="experience" value="pro">
+                      I am a pro.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="experience" value="some">
+                      I have some experience.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="experience" value="none">
+                      I have no experience.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="experience" value="dontKnow">
+                      I'm not sure.
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" name="button" class="btn btn-warning">Submit</button>
+
+              </form><!--End Form-->
+
+            </div><!--End panel body-->
+            <div class="panel-footer panel-primary">
+              Panel footer
             </div>
-
-            <label for="companyType">What type of Company would you most want to work for?</label>
-            <select class="form-control" id="companyType">
-              <option value="larger">Larger, more established businesses</option>  <!--C#-->
-              <option value="smaller">Smaller companies or startups</option>
-              <option value="either">Either large or small companies</option>
-              <option value="creative">A creative company that values my design talent</option>
-              <option value="neither">None, I don't want to work.</option>
-            </select>
-
-            <div class="form-group radioQ">
-              <label for="system">
-              What operating system do you prefer to use?
-              </label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="system" value="mac">
-                  Mac
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="system" value="windows">
-                  Windows only
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="system" value="other">
-                  Other
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="system" value="either">
-                  Either/Any
-                </label>
-              </div>
+          </div><!-- End Quiz Panel-->
+        </div> <!--end column 1-->
+        <div class="col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Official Sorting Quiz</h3>
             </div>
-
-            <label for="jobType">In what way do you want to contribute?</label>
-            <select class="form-control" id="jobType">
-              <option value="apps">I want to develop Android Apps</option>
-              <option value="content">I want to build content-heavy websites.</option>
-              <option value="interactive">I want to make interactive web applications.</option>
-              <option value="design">I want to create polished designs.</option>
-              <option value="software">I want to develop internal software.</option>
-              <option value="any">I would be happy to contribute in any way.</option>
-              <option value="none">I do not want to contribute.</option>
-            </select>
-
-            <div class="form-group radioQ">
-              <label for="system">
-              What phrase best describes your experience level?
-              </label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="experience" value="pro">
-                  I am a pro.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="experience" value="some">
-                  I have some experience.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="experience" value="none">
-                  I have no experience.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="experience" value="dontKnow">
-                  I'm not sure.
-                </label>
-              </div>
+            <div class="panel-body">
+              <div id="results">
+                <div class="rubyRails">
+                  <h3>Ruby/Rails</h3>
+                  <img src="img/rails.png" alt="rails icon" />
+                </div>
+                <div class="phpDrupal">
+                  <h3>PHP/Drupal</h3>
+                  <img src="img/drupal.png" alt="drupal icon" />
+                </div>
+                <div class="javaAndroid">
+                  <h3>Java/Andriod</h3>
+                  <img src="img/android.png" alt="android icon" />
+                </div>
+                <div class="cssDesign">
+                  <h3>css/Design</h3>
+                  <img src="img/design.png" alt="design icon" />
+                </div>
+                <div class="cNet">
+                  <h3>C#/.NET</h3>
+                  <img src="img/net.png" alt="dot net icon" />
+                </div>
+                <div class="none">
+                  <h3>No class is right for you.</h3>
+                  <img>
+                </div>
+                <div class="any">
+                  <h3>Any Class would be okay for you</h3>
+                  <img>
+                </div>
+              </div><!--end results-->
+            </div><!--End panel body-->
+            <div class="panel-footer panel-primary">
+              Panel footer
             </div>
-            <button type="submit" name="button" class="btn btn-warning">Submit</button>
-
-          </form><!--End Form-->
-
-        </div><!--End panel body-->
-        <div class="panel-footer panel-primary">
-          Panel footer
-        </div>
-      </div><!-- End Quiz Panel-->
-
-
-      <div id="results">
-        <div class="rubyRails">
-          <h3>Ruby/Rails</h3>
-          <img src="img/rails.png" alt="rails icon" />
-        </div>
-        <div class="phpDrupal">
-          <h3>PHP/Drupal</h3>
-          <img src="img/drupal.png" alt="drupal icon" />
-        </div>
-        <div class="javaAndroid">
-          <h3>Java/Andriod</h3>
-          <img src="img/android.png" alt="android icon" />
-        </div>
-        <div class="cssDesign">
-          <h3>css/Design</h3>
-          <img src="img/design.png" alt="design icon" />
-        </div>
-        <div class="cNet">
-          <h3>C#/.NET</h3>
-          <img src="img/net.png" alt="dot net icon" />
-        </div>
-        <div class="none">
-          <h3>No class is right for you.</h3>
-          <img>
-        </div>
-        <div class="any">
-          <h3>Any Class would be okay for you</h3>
-          <img>
-        </div>
-
-      </div><!--end results-->
-
-
+          </div><!-- end panel-->
+        </div><!--end column 2-->
+      </div><!--end row-->
     </div><!--end container-->
   </body>
 </html>
