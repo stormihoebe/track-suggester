@@ -1,3 +1,7 @@
 #results div {
   display: none;
 }
+
+.jumbotron {
+  text-align: center;
+}
