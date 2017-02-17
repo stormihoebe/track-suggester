@@ -18,8 +18,8 @@
         <div class="panel-heading">
           <h3 class="panel-title">Official Sorting Quiz</h3>
         </div>
-        <div class="panel-body"><!--start Form-->
-          <form id="From">
+        <div class="panel-body">
+          <form id="From"><!--start Form-->
             <div class="form-group">
               <label for="name">First Name:</label>
               <input type="text" name="name" class="firstName form-control">
@@ -39,13 +39,13 @@
               <option value="neither">None, I don't want to work.</option>
             </select>
 
-            <div class="form-group">
+            <div class="form-group radioQ">
               <label for="system">
               What operating system do you prefer to use?
               </label>
               <div class="radio">
                 <label>
-                  <input type="radio" name="system" value="mac" checked>
+                  <input type="radio" name="system" value="mac">
                   Mac
                 </label>
               </div>
@@ -80,25 +80,49 @@
               <option value="none">I do not want to contribute.</option>
             </select>
 
-
-
-
-
-
-
-
-
-
+            <div class="form-group radioQ">
+              <label for="system">
+              What phrase best describes your experience level?
+              </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="pro">
+                  I am a pro.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="some">
+                  I have some experience.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="none">
+                  I have no experience.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="dontKnow">
+                  I'm not sure.
+                </label>
+              </div>
+            </div>
+            <button type="submit" name="button" class="btn btn-warning">Submit</button>
 
           </form><!--End Form-->
 
-
-
-        </div>
+        </div><!--End panel body-->
         <div class="panel-footer panel-primary">
           Panel footer
         </div>
       </div><!-- End Quiz Panel-->
+
+
+      <div id="Results">
+
+      </div>
 
     </div><!--end container-->
   </body>
