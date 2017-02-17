@@ -7,7 +7,11 @@ $(function(){
       var jobType = $("#jobType").val();
       var experience = $("input:radio[name=experience]:checked").val();
 
-      
+      $("#results div").hide();
+
+      if(companyType === neither)
+
+
 
 
 
