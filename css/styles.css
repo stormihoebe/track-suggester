@@ -5,3 +5,20 @@
 .jumbotron {
   text-align: center;
 }
+.jumbotron img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  max-width: 70%;
+}
+.radioQ {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+.btn {
+  display: block;
+  margin: auto;
+}
+.panel-body{
+  min-height: 650px;
+}
