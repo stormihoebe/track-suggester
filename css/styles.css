@@ -20,7 +20,10 @@
   margin: auto;
 }
 .panel-body{
-  min-height: 650px;
+  min-height: 655px;
+}
+.panel-footer {
+  min-height: 100px;
 }
 h3 {
   text-align: center;
