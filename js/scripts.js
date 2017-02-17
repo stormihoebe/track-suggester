@@ -10,6 +10,7 @@ $(function(){
       $("#results div").hide();
 
       if(firstName) {
+        $(".moreButton").show();
         if(companyType === "neither" || jobType === "none"){
           $(".none").show();
           $(".studentName").text(firstName);
