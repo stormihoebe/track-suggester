@@ -228,6 +228,61 @@
           </div><!-- end panel-->
         </div><!--end column 2-->
       </div><!--end row-->
+      <div class="row quiz"><!--start second row-->
+        <div class="col-md-12">
+          <h2>Test your Knowledge with a Quiz</h2>
+          <form id="selectLanguage">
+            <div class="form-group">
+              <label for="language">Select one of the following languages:</label>
+              <select class="form-control" id="language">
+                <option value="java">Java</option>
+                <option value="css">css</option>
+                <option value="javaScript">javaScript</option>
+                <option value="c">C#</option>
+                <option value="net">.NET</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+                <option value="drupal">Drupal</option>
+              </select>
+            </div>
+            <button type="submit" name="button" class="btn btn-lg btn-warning">Start Quiz</button>
+          </form>
+        </div><!--end col-->
+      </div><!--end second row-->
+      <div class="row quiz">
+        <div id="javaQuiz">
+          <h3>Java Quiz</h3>
+          <form class ="javaQuiz">
+            <div class="form-group">
+              <label for="javaQuiz" class="radioQ">
+              True or false: Java is the same language as JavaScript
+              </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="javaTF" value="true">
+                  True
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="javaTF" value="false">
+                  False
+                </label>
+              </div>
+            </div>
+            <button type="submit" name="button">Submit Answer</button>
+          </form>
+          <h3>Results:</h3>
+          <span id = "javaResults"></span>
+
+        </div>
+
+      </div>
+
+
+
+
+
     </div><!--end container-->
   </body>
 </html>
