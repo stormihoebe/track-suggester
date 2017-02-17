@@ -24,17 +24,52 @@
               <label for="name">First Name:</label>
               <input type="text" name="name" class="firstName form-control">
             </div>
+
             <div class="form-group">
               <label for="name">Last Name:</label>
               <input type="text" name="name" class="lastName form-control">
             </div>
-            <label for="name">What type of Company appeals to you most?</label>
+
+            <label for="companyType">What type of Company would you most want to work for?</label>
             <select class="form-control" id="companyType">
-              <option value="coffee">Larger, more established businesses</option>  <!--C#-->
-              <option value="water">Smaller companies or startups</option>
-              <option value="tea">Either large or small companies</option>
-              <option value="kombucha">A creative company that would value my design talent</option>
+              <option value="larger">Larger, more established businesses</option>  <!--C#-->
+              <option value="smaller">Smaller companies or startups</option>
+              <option value="either">Either large or small companies</option>
+              <option value="creative">None, I don't want to work.</option>
+              <option value="neither"></option>
             </select>
+
+            <div class="form-group">
+              <label for="system">
+              What operating system do you prefer to use?
+              </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="system" value="mac" checked>
+                  Mac
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="system" value="windows">
+                  Windows only
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="system" value="other">
+                  Other
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="system" value="either">
+                  Either/Any
+                </label>
+              </div>
+            </div>
+
+
 
 
 
