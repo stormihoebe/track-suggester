@@ -11,18 +11,25 @@ $(function(){
 
       if(companyType === "neither" || jobType === "none"){
         $(".none").show();
+        $(".studentName").text(firstName);
       } else if (companyType === "creative" || jobType === "design") {
         $(".cssDesign").show();
+        $(".studentName").text(firstName);
       } else if ( jobType === "apps"){
         $(".javaAndroid").show();
+        $(".studentName").text(firstName);
       } else if (companyType === "larger" && system === "windows" || companyType === "larger" && jobType === "software" || system === "windows" && jobType === "software") {
         $(".cNet").show();
+        $(".studentName").text(firstName);
       } else if ( jobType === "content") {
         $(".phpDrupal").show();
+        $(".studentName").text(firstName);
       } else if (jobType === "interactive"){
         $(".rubyRails").show();
+        $(".studentName").text(firstName);
       } else {
         $(".any").show();
+        $(".studentName").text(firstName);
       }
 
 
