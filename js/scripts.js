@@ -9,7 +9,21 @@ $(function(){
 
       $("#results div").hide();
 
-      if(companyType === neither)
+      if(companyType === "neither" || jobType === "none"){
+        $(".none").show();
+      } else if (companyType === "creative" || jobType === "design") {
+        $(".cssDesign").show();
+      } else if ( jobType === "apps"){
+        $(".javaAndroid").show();
+      } else if (companyType === "larger" && system === "windows" || companyType === "larger" && jobType === "software" || system === "windows" && jobType === "software") {
+        $(".cNet").show();
+      } else if ( jobType === "content") {
+        $(".phpDrupal").show();
+      } else if (jobType === "interactive"){
+        $(".rubyRails").show();
+      } else {
+        $(".any").show();
+      }
 
 
 
