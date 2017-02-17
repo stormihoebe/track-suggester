@@ -1,7 +1,7 @@
 #results div {
   display: none;
 }
-#languageQuizzes div {
+#languageQuizzes > div {
   display: none;
 }
 .jumbotron {
