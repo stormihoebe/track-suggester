@@ -1,7 +1,7 @@
 #results div {
   display: none;
 }
-#languageQuizzes div {
+#languageQuiz div {
   display: none;
 }
 .jumbotron {
@@ -20,7 +20,6 @@
 .btn {
   display: block;
   margin: auto;
-  margin-top: 10px;
 }
 .panel-body{
   min-height: 670px;

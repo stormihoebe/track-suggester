@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+<!-- saved from url=(0054)file:///Users/Guest/Desktop/track-suggester/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Epicodus Sorting Hat_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Epicodus Sorting Hat_files/styles.css" type="text/css">
+    <script src="./Epicodus Sorting Hat_files/jquery.min.js"></script>
+    <script src="./Epicodus Sorting Hat_files/scripts.js"></script>
     <title>Epicodus Sorting Hat</title>
   </head>
   <body>
     <div class="jumbotron container-fluid">
-      <img src="img/logo.png" alt="epicodus logo" />
+      <img src="./Epicodus Sorting Hat_files/logo.png" alt="epicodus logo">
       <h1>Track Sorting Hat</h1>
       <h2>You are a code wizard, Harry!</h2>
       <h4>Take this quiz to be sorted into your Epicodus track.</h4>
@@ -131,7 +131,7 @@
               <div id="results">
                 <div class="rubyRails">
                   <h3>Ruby/Rails</h3>
-                  <img src="img/rails.png" alt="rails icon" />
+                  <img src="./Epicodus Sorting Hat_files/rails.png" alt="rails icon">
                   <h4>Dear <span class="studentName"></span>, </h4>
                   <p>
                     We are pleased to inform you that you would be a good fit for our Ruby/Rails track at Epicodus.
@@ -145,7 +145,7 @@
                 </div>
                 <div class="phpDrupal">
                   <h3>PHP/Drupal</h3>
-                  <img src="img/drupal.png" alt="drupal icon" />
+                  <img src="./Epicodus Sorting Hat_files/drupal.png" alt="drupal icon">
                   <h4>Dear <span class="studentName"></span>, </h4>
                   <p>
                     We are pleased to inform you that you would be a good fit for our PHP/Drupal track at Epicodus.
@@ -159,7 +159,7 @@
                 </div>
                 <div class="javaAndroid">
                   <h3>Java/Andriod</h3>
-                  <img src="img/android.png" alt="android icon" />
+                  <img src="./Epicodus Sorting Hat_files/android.png" alt="android icon">
                   <h4>Dear <span class="studentName"></span>, </h4>
                   <p>
                     We are pleased to inform you that you would be a good fit for our Java/Android track at Epicodus.
@@ -173,7 +173,7 @@
                 </div>
                 <div class="cssDesign">
                   <h3>css/Design</h3>
-                  <img src="img/design.png" alt="design icon" />
+                  <img src="./Epicodus Sorting Hat_files/design.png" alt="design icon">
                   <h4>Dear <span class="studentName"></span>, </h4>
                   <p>
                     We are pleased to inform you that you would be a good fit for our css/Design track at Epicodus.
@@ -187,7 +187,7 @@
                 </div>
                 <div class="cNet">
                   <h3>C#/.NET</h3>
-                  <img src="img/net.png" alt="dot net icon" />
+                  <img src="./Epicodus Sorting Hat_files/net.png" alt="dot net icon">
                   <h4>Dear <span class="studentName"></span>, </h4>
                   <p>
                     We are pleased to inform you that you would be a good fit for our C#/.NET track at Epicodus.
@@ -249,32 +249,46 @@
           </form>
         </div><!--end col-->
       </div><!--end second row-->
-      <div class="container languageQuizContainer">
-        <div class="row">
-          <div class="col-md-12" id="languageQuizzes">
-            <div class="javaQuiz">
-              <h3>Java Quiz</h3>
+      <div class="row quiz" id="languageQuiz">
+        <div id="jQ" style="display: block;">
+          <h3>Java Quiz</h3>
+          <form class="other">
+            <h1>Is this showing?</h1>
+            <div class="form-group" style="display: none;">
+              <label for="javaQuiz" class="radioQ">
+              True or false: Java is the same language as JavaScript
+              </label>
+              <div class="radio" style="display: none;">
+                <label>
+                  <input type="radio" name="javaTF" value="true">
+                  True
+                </label>
+              </div>
+              <div class="radio" style="display: none;">
+                <label>
+                  <input type="radio" name="javaTF" value="false">
+                  False
+                </label>
+              </div>
+            </div>
+            <button type="submit" name="button" class="btn btn-warning">Submit Answer</button>
+          </form>
+          <h3>Results:</h3>
+          <span id="javaResults"></span>
+        </div><!--end java quiz and results-->
+        <div id="cssQuiz" style="display: none;">
+          <h3>Css Quiz</h3>
 
-              <form id="javaQuiz">
-                <label for="javaQuiz">True or False: Java is the same as Javascript</label>
-                <select class="form-control" id="javaTF">
-                  <option value="true">True</option>
-                  <option value="false">False</option>
-                </select>
-                <button type="submit" name="button" class="btn btn-warning">Check Answers</button>
-              </form>
-              <h3>Results</h3>
-              <span class="javaResults"></span>
-            </div><!--end JavaQuiz Section-->
+
+        </div>
+
+      </div>
 
 
-          </div><!--end language quizzes column-->
 
-        </div><!--end language quiz container-->
-
-      </div><!--end language quiz container-->
 
 
     </div><!--end container-->
-  </body>
-</html>
+  
+
+</body></html>

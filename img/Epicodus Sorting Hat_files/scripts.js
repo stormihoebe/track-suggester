@@ -39,28 +39,17 @@ $(function(){
   });
 
   $("#selectLanguage").submit(function(){
+    console.log("is this working?")
     event.preventDefault();
     var language = $("#language").val();
 
-    $("#languageQuizzes div").hide();
-    
+    $("#languageQuiz div").hide();
     if (language === "java") {
-      $(".javaQuiz").show();
+      $("#jQ").show();
+
     }
 
   });
-  $("#javaQuiz").submit(function(){
-    event.preventDefault();
-    var answer = $("#javaTF").val();
-    $("#languageQuizzes div").hide();
 
-    if (answer){
-      if (answer === "true") {
-        $(".javaResults").text("You got: 0/1 correct. Try again");
-      } else {
-        $(".javaResults").text("You got: 1/1 correct. Great Job!");
-      };
-    };
-  });
 
 });
