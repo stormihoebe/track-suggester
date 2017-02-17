@@ -22,3 +22,11 @@
 .panel-body{
   min-height: 650px;
 }
+h3 {
+  text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+  padding: 40px;
+}
