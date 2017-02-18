@@ -12,25 +12,25 @@ $(function(){
       if(firstName) {
         $(".moreButton").show();
         if(companyType === "neither" || jobType === "none"){
-          $(".none").show();
+          $(".none").fadeIn(2000);
           $(".studentName").text(firstName);
         } else if (companyType === "creative" || jobType === "design") {
-          $(".cssDesign").show();
+          $(".cssDesign").fadeIn(2000);
           $(".studentName").text(firstName);
         } else if ( jobType === "apps"){
-          $(".javaAndroid").show();
+          $(".javaAndroid").fadeIn(2000);
           $(".studentName").text(firstName);
         } else if (companyType === "larger" && system === "windows" || companyType === "larger" && jobType === "software" || system === "windows" && jobType === "software") {
-          $(".cNet").show();
+          $(".cNet").fadeIn(2000);
           $(".studentName").text(firstName);
         } else if ( jobType === "content") {
-          $(".phpDrupal").show();
+          $(".phpDrupal").fadeIn(2000);
           $(".studentName").text(firstName);
         } else if (jobType === "interactive"){
-          $(".rubyRails").show();
+          $(".rubyRails").fadeIn(2000);
           $(".studentName").text(firstName);
         } else {
-          $(".any").show();
+          $(".any").fadeIn(2000);
           $(".studentName").text(firstName);
         }
       } else {
