@@ -61,3 +61,6 @@ img {
 .panel-heading {
   background-color:;
 }
+a, a:hover {
+  text-decoration: none;
+}
